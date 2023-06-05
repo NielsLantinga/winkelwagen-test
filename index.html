@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Producten</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <h1>Producten</h1>
+  
+  <div class="product">
+    <h2>Product 1</h2>
+    <p>Prijs: $10.00</p>
+    <div>
+      <button onclick="setSelectedSize(this, 'S')" class="size-button">S</button>
+      <button onclick="setSelectedSize(this, 'M')" class="size-button">M</button>
+      <button onclick="setSelectedSize(this, 'L')" class="size-button">L</button>
+      <button onclick="setSelectedSize(this, 'XL')" class="size-button">XL</button>
+      <button onclick="setSelectedSize(this, 'XXL')" class="size-button">XXL</button>
+      <button onclick="addToCartWithSelectedSize('Product 1', 10.00)" class="add-to-cart-button">Toevoegen aan winkelwagen</button>
+    </div>
+  </div>
+  
+  <div class="product">
+    <h2>Product 2</h2>
+    <p>Prijs: $15.00</p>
+    <div>
+      <button onclick="setSelectedSize(this, 'S')" class="size-button">S</button>
+      <button onclick="setSelectedSize(this, 'M')" class="size-button">M</button>
+      <button onclick="setSelectedSize(this, 'L')" class="size-button">L</button>
+      <button onclick="setSelectedSize(this, 'XL')" class="size-button">XL</button>
+      <button onclick="setSelectedSize(this, 'XXL')" class="size-button">XXL</button>
+      <button onclick="addToCartWithSelectedSize('Product 2', 15.00)" class="add-to-cart-button">Toevoegen aan winkelwagen</button>
+    </div>
+  </div>
+  
+  <a href="cart.html" class="cart-link">Winkelwagen</a>
+  
+  <script src="script.js"></script>
+  <script src="cart.js"></script>
+</body>
+</html>
